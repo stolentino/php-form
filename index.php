@@ -9,7 +9,16 @@
 </head>
 
 <body>
+  <?php
+   if (isset($_GET['name'], $_GET['lang'])){
+      $name = $_GET['name'];
+      $lang = $_GET['lang'];
+      echo $name . '<br>'; 
+      echo $lang;
+      }
+  ?>
 
+  
 <form method="get" action="index.php">
   <input type="text" name="name">
   <input type="text" name="lang">
